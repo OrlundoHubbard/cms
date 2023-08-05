@@ -7,30 +7,47 @@ include('includes/functions.php');
 include('includes/header.php');
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form1Example1" class="form-control" />
+                    <label class="form-label" for="form1Example1">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form1Example2" class="form-control" />
+                    <label class="form-label" for="form1Example2">Password</label>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                            <label class="form-check-label" for="form1Example3"> Remember me </label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!-- Simple link -->
+                        <a href="#!">Forgot password?</a>
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            </form>
         </div>
     </div>
-</nav>
+</div>
+
+
 
 <?php
 include("includes/footer.php");
